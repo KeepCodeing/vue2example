@@ -1,8 +1,12 @@
-import Vue from 'vue'
-import App from './App.vue'
+import Vue from "vue";
+import App from "./App.vue";
 
-Vue.config.productionTip = false
+import GlobalMessageBox from "../src/components/global-message-box";
+
+Vue.config.productionTip = false;
+
+Vue.prototype.$showMessage = GlobalMessageBox;
 
 new Vue({
-  render: h => h(App),
-}).$mount('#app')
+  render: (h) => h(App),
+}).$mount("#app");
