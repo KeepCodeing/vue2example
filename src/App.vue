@@ -1,18 +1,17 @@
 <template>
   <div id="app">
-    <button @click="showMessage">click me</button>
+    <MessageTest />
   </div>
 </template>
 
 <script>
+import MessageTest from "./components/message-box/test.vue";
 export default {
   name: "App",
-  components: {},
-  methods: {
-    showMessage() {
-      this.$showMessage({ message: "www" });
-    },
+  components: {
+    MessageTest,
   },
+  methods: {},
 };
 </script>
 
