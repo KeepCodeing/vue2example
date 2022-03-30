@@ -3,7 +3,8 @@
     <!-- <MessageTest /> -->
     <!-- <LoadingTest /> -->
     <!-- <NumberFormat /> -->
-    <VmodelTest />
+    <!-- <VmodelTest /> -->
+    <ListenersTest />
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import MessageTest from "./components/message-box/test.vue";
 import LoadingTest from "./components/loading-mask/test.vue";
 import NumberFormat from "./components/number-format/test.vue";
 import VmodelTest from "./components/custom-vmodel/test.vue";
+import ListenersTest from "./components/event-listener";
 export default {
   name: "App",
   components: {
@@ -19,6 +21,7 @@ export default {
     LoadingTest,
     NumberFormat,
     VmodelTest,
+    ListenersTest,
   },
   methods: {},
 };
